@@ -1,0 +1,1332 @@
+<html>
+<head>
+<title>TestNG:  Sanity</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Sanity</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>68/14/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Mar 08 15:41:05 EST 2023</td>
+</tr>
+<tr><td>Total time:</td><td>53 seconds (53519 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.Ds_Algo_Portal.testcases.TC_WelcomePage_001.welcomePageClickTest()'><b>welcomePageClickTest</b><br>Test class: com.Ds_Algo_Portal.testcases.TC_WelcomePage_001</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at com.Ds_Algo_Portal.testcases.TC_WelcomePage_001.welcomePageClickTest(TC_WelcomePage_001.java:35)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1761353343", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1761353343'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertTrue(Assert.java:56)
+	at org.testng.Assert.assertTrue(Assert.java:66)
+	at com.Ds_Algo_Portal.testcases.TC_WelcomePage_001.welcomePageClickTest(TC_WelcomePage_001.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.Ds_Algo_Portal.testcases.TC_WelcomePage_001@9dada78</td></tr>
+<tr>
+<td title='com.Ds_Algo_Portal.testcases.TC_Data_Structure_introduction_006.clickTimeComplexityButtonTest29()'><b>clickTimeComplexityButtonTest29</b><br>Test class: com.Ds_Algo_Portal.testcases.TC_Data_Structure_introduction_006</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at com.Ds_Algo_Portal.testcases.TC_Data_Structure_introduction_006.clickTimeComplexityButtonTest29(TC_Data_Structure_introduction_006.java:35)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace859361949", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace859361949'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertTrue(Assert.java:56)
+	at org.testng.Assert.assertTrue(Assert.java:66)
+	at com.Ds_Algo_Portal.testcases.TC_Data_Structure_introduction_006.clickTimeComplexityButtonTest29(TC_Data_Structure_introduction_006.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.Ds_Algo_Portal.testcases.TC_Data_Structure_introduction_006@39de9bda</td></tr>
+<tr>
+<td title='com.Ds_Algo_Portal.testcases.TC_HomePage_002.click_hp_datastructure_getsarted_test()'><b>click_hp_datastructure_getsarted_test</b><br>Test class: com.Ds_Algo_Portal.testcases.TC_HomePage_002</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.alert\-primary&quot;}
+  (Session info: chrome=110.0.5481.177)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
+System info: host: &apos;Snehas-MBP.hsd1.de.comcast.net&apos;, ip: &apos;2601:49:8400:8c90:0:0:0:acac%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.6.2&apos;, java.version: &apos;19.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fe35648d4546243ba96654dc6cf80535, findElement {using=class name, value=alert-primary}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.177, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: /var/folders/m5/gs1k0d7156z...}, goog:chromeOptions: {debuggerAddress: localhost:63785}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:63785/devtoo..., se:cdpVersion: 110.0.5481.177, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fe35648d4546243ba96654dc6cf80535
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy35.getText(Unknown Source)
+	at com.Ds_Algo_Portal.PageObject.HomePage.alert_primary_msg(HomePage.java:43)
+	at com.Ds_Algo_Portal.testcases.TC_HomePage_002.click_hp_datastructure_getsarted_test(TC_HomePage_002.java:41)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1310797638", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1310797638'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.alert\-primary&quot;}
+  (Session info: chrome=110.0.5481.177)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
+System info: host: &apos;Snehas-MBP.hsd1.de.comcast.net&apos;, ip: &apos;2601:49:8400:8c90:0:0:0:acac%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.6.2&apos;, java.version: &apos;19.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fe35648d4546243ba96654dc6cf80535, findElement {using=class name, value=alert-primary}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.177, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: /var/folders/m5/gs1k0d7156z...}, goog:chromeOptions: {debuggerAddress: localhost:63785}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:63785/devtoo..., se:cdpVersion: 110.0.5481.177, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fe35648d4546243ba96654dc6cf80535
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy35.getText(Unknown Source)
+	at com.Ds_Algo_Portal.PageObject.HomePage.alert_primary_msg(HomePage.java:43)
+	at com.Ds_Algo_Portal.testcases.TC_HomePage_002.click_hp_datastructure_getsarted_test(TC_HomePage_002.java:41)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.Ds_Algo_Portal.testcases.TC_HomePage_002@1ff15a50</td></tr>
+<tr>
+<td title='com.Ds_Algo_Portal.testcases.TC_Array_007.clickSearchTheArrayLink42()'><b>clickSearchTheArrayLink42</b><br>Test class: com.Ds_Algo_Portal.testcases.TC_Array_007</td>
+<td><div><pre>org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : SyntaxError: bad input on line 1}
+  (Session info: chrome=110.0.5481.177): SyntaxError: bad input on line 1
+Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
+System info: host: &apos;Snehas-MBP.hsd1.de.comcast.net&apos;, ip: &apos;2601:49:8400:8c90:0:0:0:acac%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.6.2&apos;, java.version: &apos;19.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fe35648d4546243ba96654dc6cf80535, getCurrentUrl {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.177, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: /var/folders/m5/gs1k0d7156z...}, goog:chromeOptions: {debuggerAddress: localhost:63785}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:63785/devtoo..., se:cdpVersion: 110.0.5481.177, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fe35648d4546243ba96654dc6cf80535
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:624)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:628)
+	at org.openqa.selenium.remote.RemoteWebDriver.getCurrentUrl(RemoteWebDriver.java:344)
+	at com.Ds_Algo_Portal.testcases.TC_Array_007.clickSearchTheArrayLink42(TC_Array_007.java:171)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1308116031", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1308116031'><pre>org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : SyntaxError: bad input on line 1}
+  (Session info: chrome=110.0.5481.177): SyntaxError: bad input on line 1
+Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
+System info: host: &apos;Snehas-MBP.hsd1.de.comcast.net&apos;, ip: &apos;2601:49:8400:8c90:0:0:0:acac%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.6.2&apos;, java.version: &apos;19.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fe35648d4546243ba96654dc6cf80535, getCurrentUrl {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.177, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: /var/folders/m5/gs1k0d7156z...}, goog:chromeOptions: {debuggerAddress: localhost:63785}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:63785/devtoo..., se:cdpVersion: 110.0.5481.177, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fe35648d4546243ba96654dc6cf80535
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:624)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:628)
+	at org.openqa.selenium.remote.RemoteWebDriver.getCurrentUrl(RemoteWebDriver.java:344)
+	at com.Ds_Algo_Portal.testcases.TC_Array_007.clickSearchTheArrayLink42(TC_Array_007.java:171)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.Ds_Algo_Portal.testcases.TC_Array_007@47148f3f</td></tr>
+<tr>
+<td title='com.Ds_Algo_Portal.testcases.TC_Data_Structure_introduction_006.clickPracticeQuestionButtonTest30()'><b>clickPracticeQuestionButtonTest30</b><br>Test class: com.Ds_Algo_Portal.testcases.TC_Data_Structure_introduction_006</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;content&apos;]/a[@href = &apos;/data-structures-introduction/practice&apos;]&quot;}
+  (Session info: chrome=110.0.5481.177)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
+System info: host: &apos;Snehas-MBP.hsd1.de.comcast.net&apos;, ip: &apos;2601:49:8400:8c90:0:0:0:acac%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.6.2&apos;, java.version: &apos;19.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fe35648d4546243ba96654dc6cf80535, findElement {using=xpath, value=//*[@id=&apos;content&apos;]/a[@href = &apos;/data-structures-introduction/practice&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.177, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: /var/folders/m5/gs1k0d7156z...}, goog:chromeOptions: {debuggerAddress: localhost:63785}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:63785/devtoo..., se:cdpVersion: 110.0.5481.177, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fe35648d4546243ba96654dc6cf80535
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy35.click(Unknown Source)
+	at com.Ds_Algo_Portal.PageObject.Data_Structure_Introduction.clickPracticeQuestion(Data_Structure_Introduction.java:35)
+	at com.Ds_Algo_Portal.testcases.TC_Data_Structure_introduction_006.clickPracticeQuestionButtonTest30(TC_Data_Structure_introduction_006.java:43)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1803439542", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1803439542'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;content&apos;]/a[@href = &apos;/data-structures-introduction/practice&apos;]&quot;}
+  (Session info: chrome=110.0.5481.177)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
+System info: host: &apos;Snehas-MBP.hsd1.de.comcast.net&apos;, ip: &apos;2601:49:8400:8c90:0:0:0:acac%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.6.2&apos;, java.version: &apos;19.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fe35648d4546243ba96654dc6cf80535, findElement {using=xpath, value=//*[@id=&apos;content&apos;]/a[@href = &apos;/data-structures-introduction/practice&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.177, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: /var/folders/m5/gs1k0d7156z...}, goog:chromeOptions: {debuggerAddress: localhost:63785}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:63785/devtoo..., se:cdpVersion: 110.0.5481.177, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fe35648d4546243ba96654dc6cf80535
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy35.click(Unknown Source)
+	at com.Ds_Algo_Portal.PageObject.Data_Structure_Introduction.clickPracticeQuestion(Data_Structure_Introduction.java:35)
+	at com.Ds_Algo_Portal.testcases.TC_Data_Structure_introduction_006.clickPracticeQuestionButtonTest30(TC_Data_Structure_introduction_006.java:43)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.Ds_Algo_Portal.testcases.TC_Data_Structure_introduction_006@39de9bda</td></tr>
+<tr>
+<td title='com.Ds_Algo_Portal.testcases.TC_HomePage_002.click_signin_tab_test_11()'><b>click_signin_tab_test_11</b><br>Test class: com.Ds_Algo_Portal.testcases.TC_HomePage_002</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Sign in&quot;}
+  (Session info: chrome=110.0.5481.177)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
+System info: host: &apos;Snehas-MBP.hsd1.de.comcast.net&apos;, ip: &apos;2601:49:8400:8c90:0:0:0:acac%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.6.2&apos;, java.version: &apos;19.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fe35648d4546243ba96654dc6cf80535, findElement {using=link text, value=Sign in}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.177, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: /var/folders/m5/gs1k0d7156z...}, goog:chromeOptions: {debuggerAddress: localhost:63785}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:63785/devtoo..., se:cdpVersion: 110.0.5481.177, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fe35648d4546243ba96654dc6cf80535
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy35.click(Unknown Source)
+	at com.Ds_Algo_Portal.PageObject.HomePage.click_signin_tab(HomePage.java:60)
+	at com.Ds_Algo_Portal.testcases.TC_HomePage_002.click_signin_tab_test_11(TC_HomePage_002.java:66)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2006005439", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2006005439'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Sign in&quot;}
+  (Session info: chrome=110.0.5481.177)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
+System info: host: &apos;Snehas-MBP.hsd1.de.comcast.net&apos;, ip: &apos;2601:49:8400:8c90:0:0:0:acac%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.6.2&apos;, java.version: &apos;19.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fe35648d4546243ba96654dc6cf80535, findElement {using=link text, value=Sign in}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.177, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: /var/folders/m5/gs1k0d7156z...}, goog:chromeOptions: {debuggerAddress: localhost:63785}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:63785/devtoo..., se:cdpVersion: 110.0.5481.177, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fe35648d4546243ba96654dc6cf80535
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy35.click(Unknown Source)
+	at com.Ds_Algo_Portal.PageObject.HomePage.click_signin_tab(HomePage.java:60)
+	at com.Ds_Algo_Portal.testcases.TC_HomePage_002.click_signin_tab_test_11(TC_HomePage_002.java:66)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.Ds_Algo_Portal.testcases.TC_HomePage_002@1ff15a50</td></tr>
+<tr>
+<td title='com.Ds_Algo_Portal.testcases.TC_Array_007.clickFindNumberWithEvenNumbersOfDigitsLink44()'><b>clickFindNumberWithEvenNumbersOfDigitsLink44</b><br>Test class: com.Ds_Algo_Portal.testcases.TC_Array_007</td>
+<td><div><pre>org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : SyntaxError: bad input on line 1}
+  (Session info: chrome=110.0.5481.177): SyntaxError: bad input on line 1
+Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
+System info: host: &apos;Snehas-MBP.hsd1.de.comcast.net&apos;, ip: &apos;2601:49:8400:8c90:0:0:0:acac%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.6.2&apos;, java.version: &apos;19.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fe35648d4546243ba96654dc6cf80535, findElement {using=xpath, value=//*[@id = &apos;questionText&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.177, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: /var/folders/m5/gs1k0d7156z...}, goog:chromeOptions: {debuggerAddress: localhost:63785}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:63785/devtoo..., se:cdpVersion: 110.0.5481.177, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fe35648d4546243ba96654dc6cf80535
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy35.getText(Unknown Source)
+	at com.Ds_Algo_Portal.PageObject.QuestionPage.checkQuestion(QuestionPage.java:23)
+	at com.Ds_Algo_Portal.testcases.TC_Array_007.clickFindNumberWithEvenNumbersOfDigitsLink44(TC_Array_007.java:214)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1218622610", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1218622610'><pre>org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : SyntaxError: bad input on line 1}
+  (Session info: chrome=110.0.5481.177): SyntaxError: bad input on line 1
+Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
+System info: host: &apos;Snehas-MBP.hsd1.de.comcast.net&apos;, ip: &apos;2601:49:8400:8c90:0:0:0:acac%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.6.2&apos;, java.version: &apos;19.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fe35648d4546243ba96654dc6cf80535, findElement {using=xpath, value=//*[@id = &apos;questionText&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.177, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: /var/folders/m5/gs1k0d7156z...}, goog:chromeOptions: {debuggerAddress: localhost:63785}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:63785/devtoo..., se:cdpVersion: 110.0.5481.177, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fe35648d4546243ba96654dc6cf80535
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy35.getText(Unknown Source)
+	at com.Ds_Algo_Portal.PageObject.QuestionPage.checkQuestion(QuestionPage.java:23)
+	at com.Ds_Algo_Portal.testcases.TC_Array_007.clickFindNumberWithEvenNumbersOfDigitsLink44(TC_Array_007.java:214)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.Ds_Algo_Portal.testcases.TC_Array_007@47148f3f</td></tr>
+<tr>
+<td title='com.Ds_Algo_Portal.testcases.TC_Array_007.clickMaxConsecutiveOnesLink43()'><b>clickMaxConsecutiveOnesLink43</b><br>Test class: com.Ds_Algo_Portal.testcases.TC_Array_007</td>
+<td><div><pre>org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : SyntaxError: bad input on line 1}
+  (Session info: chrome=110.0.5481.177): SyntaxError: bad input on line 1
+Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
+System info: host: &apos;Snehas-MBP.hsd1.de.comcast.net&apos;, ip: &apos;2601:49:8400:8c90:0:0:0:acac%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.6.2&apos;, java.version: &apos;19.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fe35648d4546243ba96654dc6cf80535, findElement {using=xpath, value=//*[@id = &apos;questionText&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.177, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: /var/folders/m5/gs1k0d7156z...}, goog:chromeOptions: {debuggerAddress: localhost:63785}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:63785/devtoo..., se:cdpVersion: 110.0.5481.177, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fe35648d4546243ba96654dc6cf80535
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy35.getText(Unknown Source)
+	at com.Ds_Algo_Portal.PageObject.QuestionPage.checkQuestion(QuestionPage.java:23)
+	at com.Ds_Algo_Portal.testcases.TC_Array_007.clickMaxConsecutiveOnesLink43(TC_Array_007.java:194)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1794125280", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1794125280'><pre>org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : SyntaxError: bad input on line 1}
+  (Session info: chrome=110.0.5481.177): SyntaxError: bad input on line 1
+Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
+System info: host: &apos;Snehas-MBP.hsd1.de.comcast.net&apos;, ip: &apos;2601:49:8400:8c90:0:0:0:acac%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.6.2&apos;, java.version: &apos;19.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fe35648d4546243ba96654dc6cf80535, findElement {using=xpath, value=//*[@id = &apos;questionText&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.177, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: /var/folders/m5/gs1k0d7156z...}, goog:chromeOptions: {debuggerAddress: localhost:63785}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:63785/devtoo..., se:cdpVersion: 110.0.5481.177, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fe35648d4546243ba96654dc6cf80535
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy35.getText(Unknown Source)
+	at com.Ds_Algo_Portal.PageObject.QuestionPage.checkQuestion(QuestionPage.java:23)
+	at com.Ds_Algo_Portal.testcases.TC_Array_007.clickMaxConsecutiveOnesLink43(TC_Array_007.java:194)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.Ds_Algo_Portal.testcases.TC_Array_007@47148f3f</td></tr>
+<tr>
+<td title='com.Ds_Algo_Portal.testcases.TC_Array_007.clickArrayPagePracticeQuestionButton41()'><b>clickArrayPagePracticeQuestionButton41</b><br>Test class: com.Ds_Algo_Portal.testcases.TC_Array_007</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at com.Ds_Algo_Portal.testcases.TC_Array_007.clickArrayPagePracticeQuestionButton41(TC_Array_007.java:156)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2109638031", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2109638031'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertTrue(Assert.java:56)
+	at org.testng.Assert.assertTrue(Assert.java:66)
+	at com.Ds_Algo_Portal.testcases.TC_Array_007.clickArrayPagePracticeQuestionButton41(TC_Array_007.java:156)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.Ds_Algo_Portal.testcases.TC_Array_007@47148f3f</td></tr>
+<tr>
+<td title='com.Ds_Algo_Portal.testcases.TC_Sign_in_page_004.inValidUserNamewithValidPasswordTest25()'><b>inValidUserNamewithValidPasswordTest25</b><br>Test class: com.Ds_Algo_Portal.testcases.TC_Sign_in_page_004</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at com.Ds_Algo_Portal.testcases.TC_Sign_in_page_004.inValidUserNamewithValidPasswordTest25(TC_Sign_in_page_004.java:103)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace55711712", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace55711712'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertTrue(Assert.java:56)
+	at org.testng.Assert.assertTrue(Assert.java:66)
+	at com.Ds_Algo_Portal.testcases.TC_Sign_in_page_004.inValidUserNamewithValidPasswordTest25(TC_Sign_in_page_004.java:103)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.Ds_Algo_Portal.testcases.TC_Sign_in_page_004@217c23ce</td></tr>
+<tr>
+<td title='com.Ds_Algo_Portal.testcases.TC_HomePage_002.click_firstdropdown_option_test()'><b>click_firstdropdown_option_test</b><br>Test class: com.Ds_Algo_Portal.testcases.TC_HomePage_002</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.alert\-primary&quot;}
+  (Session info: chrome=110.0.5481.177)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
+System info: host: &apos;Snehas-MBP.hsd1.de.comcast.net&apos;, ip: &apos;2601:49:8400:8c90:0:0:0:acac%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.6.2&apos;, java.version: &apos;19.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fe35648d4546243ba96654dc6cf80535, findElement {using=class name, value=alert-primary}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.177, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: /var/folders/m5/gs1k0d7156z...}, goog:chromeOptions: {debuggerAddress: localhost:63785}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:63785/devtoo..., se:cdpVersion: 110.0.5481.177, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fe35648d4546243ba96654dc6cf80535
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy35.getText(Unknown Source)
+	at com.Ds_Algo_Portal.PageObject.HomePage.alert_primary_msg(HomePage.java:43)
+	at com.Ds_Algo_Portal.testcases.TC_HomePage_002.click_firstdropdown_option_test(TC_HomePage_002.java:54)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace516753877", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace516753877'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.alert\-primary&quot;}
+  (Session info: chrome=110.0.5481.177)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
+System info: host: &apos;Snehas-MBP.hsd1.de.comcast.net&apos;, ip: &apos;2601:49:8400:8c90:0:0:0:acac%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.6.2&apos;, java.version: &apos;19.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fe35648d4546243ba96654dc6cf80535, findElement {using=class name, value=alert-primary}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.177, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: /var/folders/m5/gs1k0d7156z...}, goog:chromeOptions: {debuggerAddress: localhost:63785}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:63785/devtoo..., se:cdpVersion: 110.0.5481.177, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fe35648d4546243ba96654dc6cf80535
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy35.getText(Unknown Source)
+	at com.Ds_Algo_Portal.PageObject.HomePage.alert_primary_msg(HomePage.java:43)
+	at com.Ds_Algo_Portal.testcases.TC_HomePage_002.click_firstdropdown_option_test(TC_HomePage_002.java:54)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.Ds_Algo_Portal.testcases.TC_HomePage_002@1ff15a50</td></tr>
+<tr>
+<td title='com.Ds_Algo_Portal.testcases.TC_Array_007.clickSquaresOfasortedArrayLink45()'><b>clickSquaresOfasortedArrayLink45</b><br>Test class: com.Ds_Algo_Portal.testcases.TC_Array_007</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Squares of  a Sorted Array&quot;}
+  (Session info: chrome=110.0.5481.177)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
+System info: host: &apos;Snehas-MBP.hsd1.de.comcast.net&apos;, ip: &apos;2601:49:8400:8c90:0:0:0:acac%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.6.2&apos;, java.version: &apos;19.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fe35648d4546243ba96654dc6cf80535, findElement {using=link text, value=Squares of  a Sorted Array}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.177, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: /var/folders/m5/gs1k0d7156z...}, goog:chromeOptions: {debuggerAddress: localhost:63785}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:63785/devtoo..., se:cdpVersion: 110.0.5481.177, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fe35648d4546243ba96654dc6cf80535
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy35.click(Unknown Source)
+	at com.Ds_Algo_Portal.PageObject.ArrayPracticePage.click_sequencesOfASortedArray(ArrayPracticePage.java:41)
+	at com.Ds_Algo_Portal.testcases.TC_Array_007.clickSquaresOfasortedArrayLink45(TC_Array_007.java:227)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1348883706", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1348883706'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Squares of  a Sorted Array&quot;}
+  (Session info: chrome=110.0.5481.177)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
+System info: host: &apos;Snehas-MBP.hsd1.de.comcast.net&apos;, ip: &apos;2601:49:8400:8c90:0:0:0:acac%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.6.2&apos;, java.version: &apos;19.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fe35648d4546243ba96654dc6cf80535, findElement {using=link text, value=Squares of  a Sorted Array}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.177, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: /var/folders/m5/gs1k0d7156z...}, goog:chromeOptions: {debuggerAddress: localhost:63785}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:63785/devtoo..., se:cdpVersion: 110.0.5481.177, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fe35648d4546243ba96654dc6cf80535
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy35.click(Unknown Source)
+	at com.Ds_Algo_Portal.PageObject.ArrayPracticePage.click_sequencesOfASortedArray(ArrayPracticePage.java:41)
+	at com.Ds_Algo_Portal.testcases.TC_Array_007.clickSquaresOfasortedArrayLink45(TC_Array_007.java:227)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.Ds_Algo_Portal.testcases.TC_Array_007@47148f3f</td></tr>
+<tr>
+<td title='com.Ds_Algo_Portal.testcases.TC_HomePage_002.click_register_tab_test_12()'><b>click_register_tab_test_12</b><br>Test class: com.Ds_Algo_Portal.testcases.TC_HomePage_002</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at com.Ds_Algo_Portal.testcases.TC_HomePage_002.click_register_tab_test_12(TC_HomePage_002.java:87)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace131354283", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace131354283'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertTrue(Assert.java:56)
+	at org.testng.Assert.assertTrue(Assert.java:66)
+	at com.Ds_Algo_Portal.testcases.TC_HomePage_002.click_register_tab_test_12(TC_HomePage_002.java:87)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.Ds_Algo_Portal.testcases.TC_HomePage_002@1ff15a50</td></tr>
+<tr>
+<td title='com.Ds_Algo_Portal.testcases.TC_Sign_in_page_004.validUserNamewithInvalidPasswordTest26()'><b>validUserNamewithInvalidPasswordTest26</b><br>Test class: com.Ds_Algo_Portal.testcases.TC_Sign_in_page_004</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at com.Ds_Algo_Portal.testcases.TC_Sign_in_page_004.validUserNamewithInvalidPasswordTest26(TC_Sign_in_page_004.java:123)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace438448733", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace438448733'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertTrue(Assert.java:56)
+	at org.testng.Assert.assertTrue(Assert.java:66)
+	at com.Ds_Algo_Portal.testcases.TC_Sign_in_page_004.validUserNamewithInvalidPasswordTest26(TC_Sign_in_page_004.java:123)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.Ds_Algo_Portal.testcases.TC_Sign_in_page_004@217c23ce</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.Ds_Algo_Portal.testcases.TC_Graph.testGraphRepresentation()'><b>testGraphRepresentation</b><br>Test class: com.Ds_Algo_Portal.testcases.TC_Graph</td>
+<td></td>
+<td>0</td>
+<td>com.Ds_Algo_Portal.testcases.TC_Graph@14c141c0</td></tr>
+<tr>
+<td title='com.Ds_Algo_Portal.testcases.TC_Graph.testGraph()'><b>testGraph</b><br>Test class: com.Ds_Algo_Portal.testcases.TC_Graph</td>
+<td></td>
+<td>0</td>
+<td>com.Ds_Algo_Portal.testcases.TC_Graph@14c141c0</td></tr>
+<tr>
+<td title='com.Ds_Algo_Portal.testcases.TC_HomePage_002.datstructure_dropd_test()'><b>datstructure_dropd_test</b><br>Test class: com.Ds_Algo_Portal.testcases.TC_HomePage_002</td>
+<td></td>
+<td>0</td>
+<td>com.Ds_Algo_Portal.testcases.TC_HomePage_002@1ff15a50</td></tr>
+<tr>
+<td title='com.Ds_Algo_Portal.testcases.TC_SignOut_005.signoutTest27()'><b>signoutTest27</b><br>Test class: com.Ds_Algo_Portal.testcases.TC_SignOut_005</td>
+<td></td>
+<td>0</td>
+<td>com.Ds_Algo_Portal.testcases.TC_SignOut_005@61874b9d</td></tr>
+<tr>
+<td title='com.Ds_Algo_Portal.testcases.TC_LinkedList_008.clickPracticeQuestionlButton61()'><b>clickPracticeQuestionlButton61</b><br>Test class: com.Ds_Algo_Portal.testcases.TC_LinkedList_008</td>
+<td></td>
+<td>0</td>
+<td>com.Ds_Algo_Portal.testcases.TC_LinkedList_008@52226e57</td></tr>
+<tr>
+<td title='com.Ds_Algo_Portal.testcases.TC_Queue_010.clickQueuePracticeQuestionTest79()'><b>clickQueuePracticeQuestionTest79</b><br>Test class: com.Ds_Algo_Portal.testcases.TC_Queue_010</td>
+<td></td>
+<td>0</td>
+<td>com.Ds_Algo_Portal.testcases.TC_Queue_010@5fcd1c5f</td></tr>
+<tr>
+<td title='com.Ds_Algo_Portal.testcases.TC_Tree.testTerminology()'><b>testTerminology</b><br>Test class: com.Ds_Algo_Portal.testcases.TC_Tree</td>
+<td></td>
+<td>0</td>
+<td>com.Ds_Algo_Portal.testcases.TC_Tree@22d9ca63</td></tr>
+<tr>
+<td title='com.Ds_Algo_Portal.testcases.TC_Queue_010.clickImplementationUsingCollectionTryHere74()'><b>clickImplementationUsingCollectionTryHere74</b><br>Test class: com.Ds_Algo_Portal.testcases.TC_Queue_010</td>
+<td></td>
+<td>0</td>
+<td>com.Ds_Algo_Portal.testcases.TC_Queue_010@5fcd1c5f</td></tr>
+<tr>
+<td title='com.Ds_Algo_Portal.testcases.TC_Tree.testPythonimplementation()'><b>testPythonimplementation</b><br>Test class: com.Ds_Algo_Portal.testcases.TC_Tree</td>
+<td></td>
+<td>0</td>
+<td>com.Ds_Algo_Portal.testcases.TC_Tree@22d9ca63</td></tr>
+<tr>
+<td title='com.Ds_Algo_Portal.testcases.TC_Queue_010.clickQueueOperationsTryHere78()'><b>clickQueueOperationsTryHere78</b><br>Test class: com.Ds_Algo_Portal.testcases.TC_Queue_010</td>
+<td></td>
+<td>0</td>
+<td>com.Ds_Algo_Portal.testcases.TC_Queue_010@5fcd1c5f</td></tr>
+<tr>
+<td title='com.Ds_Algo_Portal.testcases.TC_Stack_009.clickPracticequestionButtonTest69()'><b>clickPracticequestionButtonTest69</b><br>Test class: com.Ds_Algo_Portal.testcases.TC_Stack_009</td>
+<td></td>
+<td>0</td>
+<td>com.Ds_Algo_Portal.testcases.TC_Stack_009@1200458e</td></tr>
+<tr>
+<td title='com.Ds_Algo_Portal.testcases.TC_Tree.testTreeTypes()'><b>testTreeTypes</b><br>Test class: com.Ds_Algo_Portal.testcases.TC_Tree</td>
+<td></td>
+<td>0</td>
+<td>com.Ds_Algo_Portal.testcases.TC_Tree@22d9ca63</td></tr>
+<tr>
+<td title='com.Ds_Algo_Portal.testcases.TC_LinkedList_008.clickLikedListGetStartedButtonTest46()'><b>clickLikedListGetStartedButtonTest46</b><br>Test class: com.Ds_Algo_Portal.testcases.TC_LinkedList_008</td>
+<td></td>
+<td>0</td>
+<td>com.Ds_Algo_Portal.testcases.TC_LinkedList_008@52226e57</td></tr>
+<tr>
+<td title='com.Ds_Algo_Portal.testcases.TC_Stack_009.clickGetStaredButtonOfStackTest62()'><b>clickGetStaredButtonOfStackTest62</b><br>Test class: com.Ds_Algo_Portal.testcases.TC_Stack_009</td>
+<td></td>
+<td>0</td>
+<td>com.Ds_Algo_Portal.testcases.TC_Stack_009@1200458e</td></tr>
+<tr>
+<td title='com.Ds_Algo_Portal.testcases.TC_Array_007.clickBasicOperationInlIstTryHereTest38()'><b>clickBasicOperationInlIstTryHereTest38</b><br>Test class: com.Ds_Algo_Portal.testcases.TC_Array_007</td>
+<td></td>
+<td>0</td>
+<td>com.Ds_Algo_Portal.testcases.TC_Array_007@47148f3f</td></tr>
+<tr>
+<td title='com.Ds_Algo_Portal.testcases.TC_Array_007.clickBasicOperationInlIstButtonTest37()'><b>clickBasicOperationInlIstButtonTest37</b><br>Test class: com.Ds_Algo_Portal.testcases.TC_Array_007</td>
+<td></td>
+<td>0</td>
+<td>com.Ds_Algo_Portal.testcases.TC_Array_007@47148f3f</td></tr>
+<tr>
+<td title='com.Ds_Algo_Portal.testcases.TC_Queue_010.clickImplementationOfQueuePythonTest71()'><b>clickImplementationOfQueuePythonTest71</b><br>Test class: com.Ds_Algo_Portal.testcases.TC_Queue_010</td>
+<td></td>
+<td>0</td>
+<td>com.Ds_Algo_Portal.testcases.TC_Queue_010@5fcd1c5f</td></tr>
+<tr>
+<td title='com.Ds_Algo_Portal.testcases.TC_LinkedList_008.clickLinkedListCreatingLinkedListTryHereButton50()'><b>clickLinkedListCreatingLinkedListTryHereButton50</b><br>Test class: com.Ds_Algo_Portal.testcases.TC_LinkedList_008</td>
+<td></td>
+<td>0</td>
+<td>com.Ds_Algo_Portal.testcases.TC_LinkedList_008@52226e57</td></tr>
+<tr>
+<td title='com.Ds_Algo_Portal.testcases.TC_Data_Structure_introduction_006.clickGetStaredButtonOfDataSructureTest28()'><b>clickGetStaredButtonOfDataSructureTest28</b><br>Test class: com.Ds_Algo_Portal.testcases.TC_Data_Structure_introduction_006</td>
+<td></td>
+<td>0</td>
+<td>com.Ds_Algo_Portal.testcases.TC_Data_Structure_introduction_006@39de9bda</td></tr>
+<tr>
+<td title='com.Ds_Algo_Portal.testcases.TC_LinkedList_008.clickInsertionl57()'><b>clickInsertionl57</b><br>Test class: com.Ds_Algo_Portal.testcases.TC_LinkedList_008</td>
+<td></td>
+<td>0</td>
+<td>com.Ds_Algo_Portal.testcases.TC_LinkedList_008@52226e57</td></tr>
+<tr>
+<td title='com.Ds_Algo_Portal.testcases.TC_Tree.testBinaryTree()'><b>testBinaryTree</b><br>Test class: com.Ds_Algo_Portal.testcases.TC_Tree</td>
+<td></td>
+<td>0</td>
+<td>com.Ds_Algo_Portal.testcases.TC_Tree@22d9ca63</td></tr>
+<tr>
+<td title='com.Ds_Algo_Portal.testcases.TC_Stack_009.clickApplicationsTryHereButtonTest68()'><b>clickApplicationsTryHereButtonTest68</b><br>Test class: com.Ds_Algo_Portal.testcases.TC_Stack_009</td>
+<td></td>
+<td>0</td>
+<td>com.Ds_Algo_Portal.testcases.TC_Stack_009@1200458e</td></tr>
+<tr>
+<td title='com.Ds_Algo_Portal.testcases.TC_LinkedList_008.clickTraversalTryHereButton56()'><b>clickTraversalTryHereButton56</b><br>Test class: com.Ds_Algo_Portal.testcases.TC_LinkedList_008</td>
+<td></td>
+<td>0</td>
+<td>com.Ds_Algo_Portal.testcases.TC_LinkedList_008@52226e57</td></tr>
+<tr>
+<td title='com.Ds_Algo_Portal.testcases.TC_LinkedList_008.clickIntroductionButton47()'><b>clickIntroductionButton47</b><br>Test class: com.Ds_Algo_Portal.testcases.TC_LinkedList_008</td>
+<td></td>
+<td>0</td>
+<td>com.Ds_Algo_Portal.testcases.TC_LinkedList_008@52226e57</td></tr>
+<tr>
+<td title='com.Ds_Algo_Portal.testcases.TC_Array_007.clickApplicationOfArrayTryHereTest40()'><b>clickApplicationOfArrayTryHereTest40</b><br>Test class: com.Ds_Algo_Portal.testcases.TC_Array_007</td>
+<td></td>
+<td>0</td>
+<td>com.Ds_Algo_Portal.testcases.TC_Array_007@47148f3f</td></tr>
+<tr>
+<td title='com.Ds_Algo_Portal.testcases.TC_WelcomePage_001.welcomePageTest()'><b>welcomePageTest</b><br>Test class: com.Ds_Algo_Portal.testcases.TC_WelcomePage_001</td>
+<td></td>
+<td>0</td>
+<td>com.Ds_Algo_Portal.testcases.TC_WelcomePage_001@9dada78</td></tr>
+<tr>
+<td title='com.Ds_Algo_Portal.testcases.TC_LinkedList_008.clickDeletion59()'><b>clickDeletion59</b><br>Test class: com.Ds_Algo_Portal.testcases.TC_LinkedList_008</td>
+<td></td>
+<td>0</td>
+<td>com.Ds_Algo_Portal.testcases.TC_LinkedList_008@52226e57</td></tr>
+<tr>
+<td title='com.Ds_Algo_Portal.testcases.TC_Stack_009.clickOperationInStackTryHereButtonTest64()'><b>clickOperationInStackTryHereButtonTest64</b><br>Test class: com.Ds_Algo_Portal.testcases.TC_Stack_009</td>
+<td></td>
+<td>0</td>
+<td>com.Ds_Algo_Portal.testcases.TC_Stack_009@1200458e</td></tr>
+<tr>
+<td title='com.Ds_Algo_Portal.testcases.TC_Queue_010.clickImplementationOfQueueInPythonTryHere72()'><b>clickImplementationOfQueueInPythonTryHere72</b><br>Test class: com.Ds_Algo_Portal.testcases.TC_Queue_010</td>
+<td></td>
+<td>0</td>
+<td>com.Ds_Algo_Portal.testcases.TC_Queue_010@5fcd1c5f</td></tr>
+<tr>
+<td title='com.Ds_Algo_Portal.testcases.TC_Queue_010.clickImplementationOfUsingCollectionsTest73()'><b>clickImplementationOfUsingCollectionsTest73</b><br>Test class: com.Ds_Algo_Portal.testcases.TC_Queue_010</td>
+<td></td>
+<td>0</td>
+<td>com.Ds_Algo_Portal.testcases.TC_Queue_010@5fcd1c5f</td></tr>
+<tr>
+<td title='com.Ds_Algo_Portal.testcases.TC_Tree.testBinarySearchTree()'><b>testBinarySearchTree</b><br>Test class: com.Ds_Algo_Portal.testcases.TC_Tree</td>
+<td></td>
+<td>1</td>
+<td>com.Ds_Algo_Portal.testcases.TC_Tree@22d9ca63</td></tr>
+<tr>
+<td title='com.Ds_Algo_Portal.testcases.TC_Array_007.clickarraysInPythonButtonTest33()'><b>clickarraysInPythonButtonTest33</b><br>Test class: com.Ds_Algo_Portal.testcases.TC_Array_007</td>
+<td></td>
+<td>0</td>
+<td>com.Ds_Algo_Portal.testcases.TC_Array_007@47148f3f</td></tr>
+<tr>
+<td title='com.Ds_Algo_Portal.testcases.TC_Tree.testBinaryApplication()'><b>testBinaryApplication</b><br>Test class: com.Ds_Algo_Portal.testcases.TC_Tree</td>
+<td></td>
+<td>0</td>
+<td>com.Ds_Algo_Portal.testcases.TC_Tree@22d9ca63</td></tr>
+<tr>
+<td title='com.Ds_Algo_Portal.testcases.TC_Array_007.clickGetStaredButtonOfArrayTest32()'><b>clickGetStaredButtonOfArrayTest32</b><br>Test class: com.Ds_Algo_Portal.testcases.TC_Array_007</td>
+<td></td>
+<td>0</td>
+<td>com.Ds_Algo_Portal.testcases.TC_Array_007@47148f3f</td></tr>
+<tr>
+<td title='com.Ds_Algo_Portal.testcases.TC_Sign_in_page_004.clickLoginWithEmptyPasswordTest22()'><b>clickLoginWithEmptyPasswordTest22</b><br>Test class: com.Ds_Algo_Portal.testcases.TC_Sign_in_page_004</td>
+<td></td>
+<td>0</td>
+<td>com.Ds_Algo_Portal.testcases.TC_Sign_in_page_004@217c23ce</td></tr>
+<tr>
+<td title='com.Ds_Algo_Portal.testcases.TC_Tree.testBSTImplementation()'><b>testBSTImplementation</b><br>Test class: com.Ds_Algo_Portal.testcases.TC_Tree</td>
+<td></td>
+<td>0</td>
+<td>com.Ds_Algo_Portal.testcases.TC_Tree@22d9ca63</td></tr>
+<tr>
+<td title='com.Ds_Algo_Portal.testcases.TC_Stack_009.clickOperationInStackButtonTest63()'><b>clickOperationInStackButtonTest63</b><br>Test class: com.Ds_Algo_Portal.testcases.TC_Stack_009</td>
+<td></td>
+<td>0</td>
+<td>com.Ds_Algo_Portal.testcases.TC_Stack_009@1200458e</td></tr>
+<tr>
+<td title='com.Ds_Algo_Portal.testcases.TC_LinkedList_008.clickImplimentLinkedList53()'><b>clickImplimentLinkedList53</b><br>Test class: com.Ds_Algo_Portal.testcases.TC_LinkedList_008</td>
+<td></td>
+<td>0</td>
+<td>com.Ds_Algo_Portal.testcases.TC_LinkedList_008@52226e57</td></tr>
+<tr>
+<td title='com.Ds_Algo_Portal.testcases.TC_Array_007.clickarraysInPythonTryHereTest34()'><b>clickarraysInPythonTryHereTest34</b><br>Test class: com.Ds_Algo_Portal.testcases.TC_Array_007</td>
+<td></td>
+<td>0</td>
+<td>com.Ds_Algo_Portal.testcases.TC_Array_007@47148f3f</td></tr>
+<tr>
+<td title='com.Ds_Algo_Portal.testcases.TC_Queue_010.clickImplementationUsingArrayTryHere76()'><b>clickImplementationUsingArrayTryHere76</b><br>Test class: com.Ds_Algo_Portal.testcases.TC_Queue_010</td>
+<td></td>
+<td>0</td>
+<td>com.Ds_Algo_Portal.testcases.TC_Queue_010@5fcd1c5f</td></tr>
+<tr>
+<td title='com.Ds_Algo_Portal.testcases.TC_HomePage_002.hpdatastructure_test()'><b>hpdatastructure_test</b><br>Test class: com.Ds_Algo_Portal.testcases.TC_HomePage_002</td>
+<td></td>
+<td>0</td>
+<td>com.Ds_Algo_Portal.testcases.TC_HomePage_002@1ff15a50</td></tr>
+<tr>
+<td title='com.Ds_Algo_Portal.testcases.TC_Array_007.clickarryUsingListTest35()'><b>clickarryUsingListTest35</b><br>Test class: com.Ds_Algo_Portal.testcases.TC_Array_007</td>
+<td></td>
+<td>0</td>
+<td>com.Ds_Algo_Portal.testcases.TC_Array_007@47148f3f</td></tr>
+<tr>
+<td title='com.Ds_Algo_Portal.testcases.TC_LinkedList_008.clicknsertionTryHereButton60()'><b>clicknsertionTryHereButton60</b><br>Test class: com.Ds_Algo_Portal.testcases.TC_LinkedList_008</td>
+<td></td>
+<td>0</td>
+<td>com.Ds_Algo_Portal.testcases.TC_LinkedList_008@52226e57</td></tr>
+<tr>
+<td title='com.Ds_Algo_Portal.testcases.TC_Tree.testTree()'><b>testTree</b><br>Test class: com.Ds_Algo_Portal.testcases.TC_Tree</td>
+<td></td>
+<td>0</td>
+<td>com.Ds_Algo_Portal.testcases.TC_Tree@22d9ca63</td></tr>
+<tr>
+<td title='com.Ds_Algo_Portal.testcases.TC_Array_007.clicktryHereInArrayUsingListTest36()'><b>clicktryHereInArrayUsingListTest36</b><br>Test class: com.Ds_Algo_Portal.testcases.TC_Array_007</td>
+<td></td>
+<td>0</td>
+<td>com.Ds_Algo_Portal.testcases.TC_Array_007@47148f3f</td></tr>
+<tr>
+<td title='com.Ds_Algo_Portal.testcases.TC_Stack_009.clickImplementationTryHereButtonTest66()'><b>clickImplementationTryHereButtonTest66</b><br>Test class: com.Ds_Algo_Portal.testcases.TC_Stack_009</td>
+<td></td>
+<td>0</td>
+<td>com.Ds_Algo_Portal.testcases.TC_Stack_009@1200458e</td></tr>
+<tr>
+<td title='com.Ds_Algo_Portal.testcases.TC_LinkedList_008.clickTypeOfLinkedListTryHereButton52()'><b>clickTypeOfLinkedListTryHereButton52</b><br>Test class: com.Ds_Algo_Portal.testcases.TC_LinkedList_008</td>
+<td></td>
+<td>0</td>
+<td>com.Ds_Algo_Portal.testcases.TC_LinkedList_008@52226e57</td></tr>
+<tr>
+<td title='com.Ds_Algo_Portal.testcases.TC_Sign_in_page_004.clickLoginWithEmptyUsernamePasswordTest21()'><b>clickLoginWithEmptyUsernamePasswordTest21</b><br>Test class: com.Ds_Algo_Portal.testcases.TC_Sign_in_page_004</td>
+<td></td>
+<td>0</td>
+<td>com.Ds_Algo_Portal.testcases.TC_Sign_in_page_004@217c23ce</td></tr>
+<tr>
+<td title='com.Ds_Algo_Portal.testcases.TC_Queue_010.clickQueueOperationsTest77()'><b>clickQueueOperationsTest77</b><br>Test class: com.Ds_Algo_Portal.testcases.TC_Queue_010</td>
+<td></td>
+<td>0</td>
+<td>com.Ds_Algo_Portal.testcases.TC_Queue_010@5fcd1c5f</td></tr>
+<tr>
+<td title='com.Ds_Algo_Portal.testcases.TC_Tree.testTraversalIllustration()'><b>testTraversalIllustration</b><br>Test class: com.Ds_Algo_Portal.testcases.TC_Tree</td>
+<td></td>
+<td>0</td>
+<td>com.Ds_Algo_Portal.testcases.TC_Tree@22d9ca63</td></tr>
+<tr>
+<td title='com.Ds_Algo_Portal.testcases.TC_LinkedList_008.clickTypesOfLinkedListButton51()'><b>clickTypesOfLinkedListButton51</b><br>Test class: com.Ds_Algo_Portal.testcases.TC_LinkedList_008</td>
+<td></td>
+<td>0</td>
+<td>com.Ds_Algo_Portal.testcases.TC_LinkedList_008@52226e57</td></tr>
+<tr>
+<td title='com.Ds_Algo_Portal.testcases.TC_LinkedList_008.clickTypeOfLinkedListTryHereButton54()'><b>clickTypeOfLinkedListTryHereButton54</b><br>Test class: com.Ds_Algo_Portal.testcases.TC_LinkedList_008</td>
+<td></td>
+<td>0</td>
+<td>com.Ds_Algo_Portal.testcases.TC_LinkedList_008@52226e57</td></tr>
+<tr>
+<td title='com.Ds_Algo_Portal.testcases.TC_Tree.testBinaryTreeImplementation()'><b>testBinaryTreeImplementation</b><br>Test class: com.Ds_Algo_Portal.testcases.TC_Tree</td>
+<td></td>
+<td>0</td>
+<td>com.Ds_Algo_Portal.testcases.TC_Tree@22d9ca63</td></tr>
+<tr>
+<td title='com.Ds_Algo_Portal.testcases.TC_Queue_010.clickQueueGetStartedButtonTest70()'><b>clickQueueGetStartedButtonTest70</b><br>Test class: com.Ds_Algo_Portal.testcases.TC_Queue_010</td>
+<td></td>
+<td>0</td>
+<td>com.Ds_Algo_Portal.testcases.TC_Queue_010@5fcd1c5f</td></tr>
+<tr>
+<td title='com.Ds_Algo_Portal.testcases.TC_Stack_009.clickApplicationsButtonTest67()'><b>clickApplicationsButtonTest67</b><br>Test class: com.Ds_Algo_Portal.testcases.TC_Stack_009</td>
+<td></td>
+<td>0</td>
+<td>com.Ds_Algo_Portal.testcases.TC_Stack_009@1200458e</td></tr>
+<tr>
+<td title='com.Ds_Algo_Portal.testcases.TC_LinkedList_008.clickCreatingLinkedListButton49()'><b>clickCreatingLinkedListButton49</b><br>Test class: com.Ds_Algo_Portal.testcases.TC_LinkedList_008</td>
+<td></td>
+<td>0</td>
+<td>com.Ds_Algo_Portal.testcases.TC_LinkedList_008@52226e57</td></tr>
+<tr>
+<td title='com.Ds_Algo_Portal.testcases.TC_LinkedList_008.clickTraversal55()'><b>clickTraversal55</b><br>Test class: com.Ds_Algo_Portal.testcases.TC_LinkedList_008</td>
+<td></td>
+<td>0</td>
+<td>com.Ds_Algo_Portal.testcases.TC_LinkedList_008@52226e57</td></tr>
+<tr>
+<td title='com.Ds_Algo_Portal.testcases.TC_Tree.testBinaryTreeTypes()'><b>testBinaryTreeTypes</b><br>Test class: com.Ds_Algo_Portal.testcases.TC_Tree</td>
+<td></td>
+<td>0</td>
+<td>com.Ds_Algo_Portal.testcases.TC_Tree@22d9ca63</td></tr>
+<tr>
+<td title='com.Ds_Algo_Portal.testcases.TC_Sign_in_page_004.youAreLoggedInTest24()'><b>youAreLoggedInTest24</b><br>Test class: com.Ds_Algo_Portal.testcases.TC_Sign_in_page_004</td>
+<td></td>
+<td>0</td>
+<td>com.Ds_Algo_Portal.testcases.TC_Sign_in_page_004@217c23ce</td></tr>
+<tr>
+<td title='com.Ds_Algo_Portal.testcases.TC_LinkedList_008.clicknsertionTryHereButton58()'><b>clicknsertionTryHereButton58</b><br>Test class: com.Ds_Algo_Portal.testcases.TC_LinkedList_008</td>
+<td></td>
+<td>0</td>
+<td>com.Ds_Algo_Portal.testcases.TC_LinkedList_008@52226e57</td></tr>
+<tr>
+<td title='com.Ds_Algo_Portal.testcases.TC_Tree.testBinaryTreeTraversal()'><b>testBinaryTreeTraversal</b><br>Test class: com.Ds_Algo_Portal.testcases.TC_Tree</td>
+<td></td>
+<td>0</td>
+<td>com.Ds_Algo_Portal.testcases.TC_Tree@22d9ca63</td></tr>
+<tr>
+<td title='com.Ds_Algo_Portal.testcases.TC_Data_Structure_introduction_006.clickTryHereTest31()'><b>clickTryHereTest31</b><br>Test class: com.Ds_Algo_Portal.testcases.TC_Data_Structure_introduction_006</td>
+<td></td>
+<td>1</td>
+<td>com.Ds_Algo_Portal.testcases.TC_Data_Structure_introduction_006@39de9bda</td></tr>
+<tr>
+<td title='com.Ds_Algo_Portal.testcases.TC_Stack_009.clickImplementationButtonTest65()'><b>clickImplementationButtonTest65</b><br>Test class: com.Ds_Algo_Portal.testcases.TC_Stack_009</td>
+<td></td>
+<td>0</td>
+<td>com.Ds_Algo_Portal.testcases.TC_Stack_009@1200458e</td></tr>
+<tr>
+<td title='com.Ds_Algo_Portal.testcases.TC_Tree.testTreeTraversals()'><b>testTreeTraversals</b><br>Test class: com.Ds_Algo_Portal.testcases.TC_Tree</td>
+<td></td>
+<td>0</td>
+<td>com.Ds_Algo_Portal.testcases.TC_Tree@22d9ca63</td></tr>
+<tr>
+<td title='com.Ds_Algo_Portal.testcases.TC_Sign_in_page_004.clickLoginInvalidPasswordTest23()'><b>clickLoginInvalidPasswordTest23</b><br>Test class: com.Ds_Algo_Portal.testcases.TC_Sign_in_page_004</td>
+<td></td>
+<td>0</td>
+<td>com.Ds_Algo_Portal.testcases.TC_Sign_in_page_004@217c23ce</td></tr>
+<tr>
+<td title='com.Ds_Algo_Portal.testcases.TC_LinkedList_008.clickIntroductionTryHereButton48()'><b>clickIntroductionTryHereButton48</b><br>Test class: com.Ds_Algo_Portal.testcases.TC_LinkedList_008</td>
+<td></td>
+<td>0</td>
+<td>com.Ds_Algo_Portal.testcases.TC_LinkedList_008@52226e57</td></tr>
+<tr>
+<td title='com.Ds_Algo_Portal.testcases.TC_Array_007.clickApplicationOFArrayButtonTest39()'><b>clickApplicationOFArrayButtonTest39</b><br>Test class: com.Ds_Algo_Portal.testcases.TC_Array_007</td>
+<td></td>
+<td>0</td>
+<td>com.Ds_Algo_Portal.testcases.TC_Array_007@47148f3f</td></tr>
+<tr>
+<td title='com.Ds_Algo_Portal.testcases.TC_Queue_010.clickImplementationUsingArrayTest75()'><b>clickImplementationUsingArrayTest75</b><br>Test class: com.Ds_Algo_Portal.testcases.TC_Queue_010</td>
+<td></td>
+<td>0</td>
+<td>com.Ds_Algo_Portal.testcases.TC_Queue_010@5fcd1c5f</td></tr>
+</table><p>
+</body>
+</html>

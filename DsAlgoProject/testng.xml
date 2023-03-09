@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Dsportalapp">
+	<test name="Sanity">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.Ds_Algo_Portal.testcases.TC_WelcomePage_001" />
+			<class name="com.Ds_Algo_Portal.testcases.TC_HomePage_002" />
+			<class name="com.Ds_Algo_Portal.testcases.TC_RegisterPage_003" /> 
+			<class name="com.Ds_Algo_Portal.testcases.TC_Sign_in_page_004" />
+			<class name="com.Ds_Algo_Portal.testcases.TC_Data_Structure_introduction_006" />
+			<!-- <class name="com.Ds_Algo_Portal.testcases.TC_Array_007" />   -->
+			<class name="com.Ds_Algo_Portal.testcases.TC_LinkedList_008" />
+			<class name="com.Ds_Algo_Portal.testcases.TC_Stack_009" />
+			<class name="com.Ds_Algo_Portal.testcases.TC_Queue_010" />
+			<class name="com.Ds_Algo_Portal.testcases.TC_Tree" />
+			<class name="com.Ds_Algo_Portal.testcases.TC_Graph" />
+			<class name="com.Ds_Algo_Portal.testcases.TC_SignOut_005" />
+		</classes>
+	</test> <!-- Sanity -->
+</suite> <!-- testsuit1 -->
+
+ 

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="com.Ds_Algo_Portal.testcases.TC_Array_007">
+        <methods>
+          <include name="clickSearchTheArrayLink42"/>
+          <include name="clickGetStaredButtonOfArrayTest32"/>
+          <include name="clickApplicationOFArrayButtonTest39"/>
+          <include name="clickarryUsingListTest35"/>
+          <include name="clickSquaresOfasortedArrayLink45"/>
+          <include name="clickBasicOperationInlIstButtonTest37"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="clickarraysInPythonButtonTest33"/>
+        </methods>
+      </class> <!-- com.Ds_Algo_Portal.testcases.TC_Array_007 -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
