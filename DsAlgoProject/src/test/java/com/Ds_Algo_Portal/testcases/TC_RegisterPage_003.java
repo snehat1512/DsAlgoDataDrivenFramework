@@ -30,7 +30,7 @@ public class TC_RegisterPage_003 extends BaseClass {
 	public void registerPageUsernameInputTest14() {
 		driver.get(registerURL);
 		RegisterPage rp = new RegisterPage(driver);
-		rp.setUserName("jabcd1230");
+		rp.setUserName("jabcd12390");
 		rp.click_register_button();
 
 		String validationMessage = rp.passwordValidationMsg();
@@ -151,10 +151,10 @@ public class TC_RegisterPage_003 extends BaseClass {
 		driver.get(registerURL);
 		RegisterPage rp = new RegisterPage(driver);
 		HomePage hp = new HomePage(driver);
-		String userName = "sanw123459";
+		String userName = "sanw1234590";
 		rp.setUserName(userName);
-		rp.setPassword("Te$ting1");
-		rp.setConfirmationPasword("Te$ting1");
+		rp.setPassword("Te$ting12");
+		rp.setConfirmationPasword("Te$ting12");
 		rp.click_register_button();
 		System.out.println(driver.getCurrentUrl());
 

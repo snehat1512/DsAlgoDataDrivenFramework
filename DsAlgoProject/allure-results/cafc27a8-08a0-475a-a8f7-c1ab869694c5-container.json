@@ -1,1 +1,0 @@
-{"uuid":"cafc27a8-08a0-475a-a8f7-c1ab869694c5","name":"com.Ds_Algo_Portal.testcases.TC_SignOut_005","children":["f761ea73-0f40-4a28-9ed3-f7e869f432b5"],"befores":[],"afters":[{"name":"tearDown","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1678338840385,"stop":1678338840385}],"start":1678338802612,"stop":1678338840388}

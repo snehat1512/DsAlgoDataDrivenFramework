@@ -208,3 +208,9 @@
 [INFO ] 2023-03-09 00:13:49.971 [main] BaseClass - User is at Tree Page
 [INFO ] 2023-03-09 00:13:59.476 [main] BaseClass - User is at Graph Page
 [INFO ] 2023-03-09 00:14:00.355 [main] BaseClass - User Is SignedOut
+[INFO ] 2023-03-09 10:41:15.032 [main] BaseClass - User is at Linkkelist Page
+[INFO ] 2023-03-09 10:41:16.078 [main] BaseClass - User is at Stack Page
+[INFO ] 2023-03-09 10:41:18.912 [main] BaseClass - User is at Queue Page
+[INFO ] 2023-03-09 10:41:22.804 [main] BaseClass - User is at Tree Page
+[INFO ] 2023-03-09 10:41:33.966 [main] BaseClass - User is at Graph Page
+[INFO ] 2023-03-09 10:41:35.064 [main] BaseClass - User Is SignedOut
